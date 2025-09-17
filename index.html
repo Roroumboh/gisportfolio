@@ -175,14 +175,13 @@
   <!-- Leaflet JS -->
   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
   <script>
-    // Project 1 (Leaflet map)
-    L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+        // Project 1 (Leaflet map)
+    var map1 = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
   attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a> contributors &copy; <a href="https://carto.com/">CARTO</a>',
   subdomains: 'abcd',
   maxZoom: 20
-}).addTo(map1);
-
-    L.marker([-6.914744, 107.609810]).addTo(map1)
+    }).addTo(map1);
+       L.marker([-6.914744, 107.609810]).addTo(map1)
       .bindPopup('Bandung Flood Risk Project');
   </script>
 
